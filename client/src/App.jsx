@@ -1,9 +1,17 @@
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from './routes';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
 function App() {
   return (
-    <div className="text-center mt-10 text-2xl font-bold text-blue-600">
-      MERN Blog is Live!
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <AppRoutes />
+      <Footer />
+    </BrowserRouter>
   );
 }
 
 export default App;
+
